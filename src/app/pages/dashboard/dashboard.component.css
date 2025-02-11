@@ -1,0 +1,10 @@
+.main::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

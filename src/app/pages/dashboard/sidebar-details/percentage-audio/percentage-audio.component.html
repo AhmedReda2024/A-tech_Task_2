@@ -1,0 +1,43 @@
+<section class="bg-white border text-center border-[#ECF0F5] rounded-md p-3">
+  <div class="percentage-title">
+    <h3 class="text-xs text-[#1C1C28] py-3">{{ "chart.ratio" | translate }}</h3>
+  </div>
+
+  <div class="flex flex-col items-center relative">
+    <!-- ECharts Doughnut Chart -->
+    @if (isBrowser) {
+    <div echarts [options]="chartOptions" class="chart-container"></div>
+    }
+
+    <div class="absolute top-0 left-50% flex flex-col items-center py-5 w-40">
+      <!-- User Image -->
+
+      <img src="/images/img-2.png" class="w-8 rounded-full" alt="User Image" />
+
+      <!-- Name -->
+      <h3 class="text-xs text-[#1C1C28] font-normal">
+        {{ "chart.chart_name" | translate }}
+      </h3>
+    </div>
+
+    <div
+      class="flex items-center justify-between xs:flex-col xsm:flex-row md:flex-col lg:flex-row w-[70%] pt-3"
+    >
+      <div class="flex items-center gap-[6px]">
+        <span class="w-2 h-2 bg-[#EFEFEF] rounded-full"></span>
+        <span class="text-[#6B7280] font-normal text-xs">{{
+          "chart.speaking" | translate
+        }}</span>
+        <span class="text-[#6B7280] font-medium text-xs">60%</span>
+      </div>
+      <!-- Stats -->
+      <div class="flex items-center gap-[6px]">
+        <span class="w-2 h-2 bg-[#3E97FF] rounded-full"></span>
+        <span class="text-[#6B7280] font-normal text-xs">{{
+          "chart.listening" | translate
+        }}</span>
+        <span class="text-[#6B7280] font-medium text-xs">40%</span>
+      </div>
+    </div>
+  </div>
+</section>

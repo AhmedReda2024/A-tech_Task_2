@@ -1,0 +1,85 @@
+<section class="bg-white border p-3 text-center border-[#ECF0F5] rounded-md">
+  <div>
+    <h4 class="text-xs text-[#1C1C28] font-normal">
+      {{ "audio.record_call" | translate }}
+    </h4>
+
+    <div>
+      <div class="flex items-center justify-between">
+        <span class="text-xs font-normal text-[#6B7280]">
+          {{ formatTime(currentTime) }}
+        </span>
+        <span class="text-xs font-normal text-[#6B7280]">
+          {{ formatTime(duration) }}
+        </span>
+      </div>
+
+      <!-- Progress Bar -->
+      <div>
+        <input
+          id="progress-bar"
+          type="range"
+          [value]="currentTime"
+          [max]="duration"
+          (input)="seekAudio($event)"
+          class="w-full h-[6px] my-4 bg-[#D9EAFF] rounded[2px] appearance-none cursor-pointer"
+        />
+      </div>
+
+      <!-- Controls -->
+      <div class="flex items-center justify-between mx-4">
+        <div
+          class="flex items-center cursor-pointer py-1 px-4 rounded bg-[#F2F2F2]"
+        >
+          <span id="speed-control" class="text-[#6B7280] font-semibold"
+            >1x</span
+          >
+        </div>
+
+        <div class="flex items-center gap-5">
+          <button
+            id="rewind-10s-btn"
+            class="p-2 rounded-lg text-[#6B7280] font-semibold"
+          >
+            <div>
+              <img src="/images/rewind-back.svg" alt="" />
+            </div>
+          </button>
+
+          <button
+            (click)="togglePlay()"
+            id="play-pause-btn"
+            class="bg-[#3E97FF] rounded-[6.8px] py-[6.8px] px-[11.9px] text-white"
+          >
+            <i
+              id="play-icon"
+              [class.fa-play]="!isPlaying"
+              [class.fa-pause]="isPlaying"
+              class="fa-solid text-2xl text-white"
+            ></i>
+          </button>
+
+          <button
+            id="forward-10s-btn"
+            class="p-2 rounded-lg text-[#6B7280] font-semibold"
+          >
+            <div>
+              <img src="/images/rewind-forward.svg" alt="" />
+            </div>
+          </button>
+        </div>
+
+        <button id="download-btn" class="py-1 px-2 rounded bg-[#F2F2F2]">
+          <img src="/images/arrow-download.png" alt="" />
+        </button>
+      </div>
+
+      <!-- Audio Element -->
+      <audio #audio id="audio">
+        <source src="/images/alone-296348.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+  </div>
+
+  <!-- </div> -->
+</section>

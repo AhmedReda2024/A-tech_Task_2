@@ -1,0 +1,78 @@
+<section class="p-3 border border-[#ECF0F5] rounded-md flex flex-col gap-3">
+  <div class="title flex items-center gap-1">
+    <img src="/images/medal.png" alt="medaol icon" />
+    <h3 class="text-[13px] text-[#1C1C28]">
+      {{ "evaluation.management_evaluation" | translate }}
+    </h3>
+  </div>
+
+  <div class="py-3 px-4 bg-white rounded-lg eva-shadow text-center">
+    <h4 class="pb-2 text-[#1C1C28] text-xs">
+      {{ "evaluation.average_ratings" | translate }}
+    </h4>
+
+    <div class="py-[6px] px-4 bg-[#F7F8FA] rounded-md w-fit mx-auto">
+      <h5 class="pb-[6px] text-[#48B29A] text-[22px] font-semibold">
+        80%
+        <span class="font-normal text-[14px]"
+          >({{ "evaluation.good" | translate }})</span
+        >
+      </h5>
+      <p class="font-semibold text-[#83899F] text-xs">
+        (10
+        <span class="font-normal">{{
+          "evaluation.times_rating" | translate
+        }}</span>
+        )
+      </p>
+    </div>
+  </div>
+
+  <div>
+    <div class="flex justify-between items-center pb-4">
+      <h4 class="flex items-center gap-1 text-[#6B7280] text-xs">
+        {{ "evaluation.ratings" | translate }}
+        <span
+          class="border-[0.56px] text-[8.59px] text-[#83899F] border-[#EAEDF4] bg-[#F7F8FB] size-[18px] rounded-full flex items-center justify-center"
+          >12</span
+        >
+      </h4>
+
+      <a
+        class="border border-[#E2E2E2] text-xs text-[#2E2E2E] cursor-pointer rounded p-[6px] px-2 flex items-center gap-1"
+      >
+        {{ "evaluation.add_review" | translate }}
+        <img src="/images/circle-plus.png" alt="circle-plus" />
+      </a>
+    </div>
+
+    <div class="flex flex-row xs:flex-col xsm:flex-row gap-2">
+      <div class="img w-1/12 xs:w-full xsm:w-1/12">
+        <img
+          class="w-7 rounded-full"
+          src="/images/evaluation-img.jpeg"
+          alt="evaluation"
+        />
+      </div>
+
+      <div class="w-11/12 xs:w-full xsm:w-11/12">
+        <div class="flex justify-between items-center text-xs">
+          <h4 class="text-xs md:text-[10px] lg:text-xs">
+            {{ "evaluation.client_name" | translate }}
+          </h4>
+          <div class="flex items-center gap-1">
+            <span class="text-[#6B7280] bg-[#f7f8fa] py-1 px-[10px] rounded">{{
+              "evaluation.client_text" | translate
+            }}</span>
+            <span class="text-[#83899F]">|</span>
+            <span class="text-[#83899F]">05/04/2023</span>
+          </div>
+        </div>
+
+        <p class="text-xs text-[#83899F]">
+          {{ "evaluation.client_feedback" | translate }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,75 @@
+{
+  "header": {
+    "lang": "Lang",
+    "call_number": "Call Number"
+  },
+  "details": {
+    "outgoing_call": "Outgoing call",
+    "month": "October",
+    "hour": "PM",
+    "caller_id": "Caller ID",
+    "contacted_by": "Contacted by",
+    "contacted_by_name": "Ashraf Rizk",
+    "call_duration": "Call duration",
+    "department": "Department",
+    "customer_service": "Customer Service",
+    "employee": "Employee",
+    "employee_name": "Marwan Hassan Kilani",
+    "phone": "+2001012345678"
+  },
+  "summary": {
+    "call_summary": "Call Summary",
+    "call_text": "Call Text",
+    "call_path": "Call Path",
+    "comments": "Comments",
+    "paragraph": "Customer requested an immediate update on the status of a delayed shipment. It was agreed that daily email updates would be sent until the issue was resolved. Customer appeared dissatisfied, but accepted the solution temporarily, with further follow-up. Customer requested an immediate update on the status of a delayed shipment. It was agreed that daily email updates would be sent until the issue was resolved. Customer appeared dissatisfied, but accepted the solution temporarily, with further follow-up. Customer appeared dissatisfied, but accepted the solution temporarily, with further follow-up",
+    "tags": "Tags",
+    "deals": "Deals",
+    "customer_services": "Customer Service",
+    "quick_summary": "Quick Summary",
+    "text_1": "The call with the customer lasted 25 minutes and focused on billing issues the customer was experiencing on their last invoice. The customer began by expressing frustration with the unjustified additional charges and requested clarification on the policies in place. During the call, the employee explained the details of the invoice and the reasons for the charges, apologized for any confusion, and promised to correct the error on the next invoice.",
+    "text_2": "A suggestion was made to add a discount to future charges as compensation, which was welcomed by the customer. The customer's previous records were also reviewed to ensure that the problem would not recur. At the end of the call, the customer expressed his satisfaction with the actions taken and confirmed that he would continue dealing with the company provided that communication was improved in the future.",
+    "reason": "Reason For Contact",
+    "problem": "Problem with the customer",
+    "employee_did": "What the employee did",
+    "problem_text": "The employee listened patiently to the customer's problem and solved it. The employee listened patiently to the customer's problem and solved it. The employee listened patiently to the customer's problem and solved it.",
+    "activities": "Activities to be done",
+    "employee_instructions": "The employee must follow up on the customer's shipment before next week.",
+    "logical_solution": "Logical solution to the call",
+    "call_solution": "A call has been scheduled with the customer to confirm that the issue has been resolved."
+  },
+  "audio": {
+    "record_call": "Record The Call"
+  },
+  "chart": {
+    "ratio": "Listening and Speaking Ratio",
+    "chart_name": "Marwan Hassan Abdel Hamid",
+    "speaking": "Speaking",
+    "listening": "Listening"
+  },
+  "analysis": {
+    "sentiment_analysis": "Sentiment Analysis",
+    "positive": "Positive All Time",
+    "After_call": "After The Call",
+    "mission_scheduled": "A New Mission Scheduled",
+    "ai_evaluation": "AI Evaluation",
+    "great_call": "Great Call",
+    "employee_evaluation": "Employee Evaluation",
+    "great": "Great"
+  },
+  "evaluation": {
+    "management_evaluation": "Management Evaluation",
+    "average_ratings": "Average Management Ratings",
+    "good": "Good",
+    "times_rating": "Times Rating",
+    "ratings": "Ratings",
+    "add_review": "Add a review",
+    "client_name": "Haitham Mohammed",
+    "client_text": "Good",
+    "client_feedback": "Hussein was brilliant in handling this conversation. He was clear and organized in presenting information, and responded quickly and professionally to the customer's questions. The way he conducted the conversation reflected his deep understanding of the customer's needs and his keenness to provide effective solutions."
+  },
+  "customer_evaluation": {
+    "rating": "Customer Rating",
+    "customer_feedback": "The employee was respectful and kind, and provided helpful information, but I felt that the response to some of my questions was a bit slow. I wish the solution had been explained more clearly."
+  }
+}

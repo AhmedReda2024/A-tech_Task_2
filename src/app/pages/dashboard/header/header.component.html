@@ -1,0 +1,82 @@
+<header class="bg-white border border-[#e4e4e4] rounded-tl-lg rounded-tr-lg">
+  <div
+    class="flex justify-between items-center xs:flex-col-reverse md:flex-row py-[10px] px-[16px]"
+  >
+    <div class="flex items-center gap-2 font-normal text-[#1C1C28] text-sm">
+      <div class="number">
+        <i class="fa-regular fa-copy text-[#6B7280]"></i>
+        12345678
+      </div>
+      <span class="text">{{ "header.call_number" | translate }}</span>
+      <span>
+        <i class="fa-solid fa-phone-flip text-[#6FC8FF]"></i>
+      </span>
+    </div>
+
+    <div class="close-btn flex items-center gap-2">
+      <div>
+        <!-- Language Dropdown -->
+        <div class="relative ms-3">
+          <button
+            (click)="toggleDropDown()"
+            class="text-white bg-[#6FC8FF] font-medium rounded-md text-sm px-5 py-2.5 text-center flex items-center"
+          >
+            {{ "header.lang" | translate }}
+            <svg
+              class="w-4 h-4 ms-3"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1l4 4 4-4"
+              />
+            </svg>
+          </button>
+
+          <!-- Dropdown menu -->
+          @if (isDropdownOpen) {
+          <div
+            [class]="{
+              'top-full':
+                translateService.currentLang == 'en' ||
+                translateService.currentLang == 'ar',
+              'right-0': translateService.currentLang == 'en',
+              'left-0': translateService.currentLang == 'ar'
+            }"
+            class="absolute z-10 top-full right-0 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 mt-2"
+          >
+            <ul class="py-2 text-sm text-gray-700">
+              <li
+                [class.bg-gray-100]="translateService.currentLang == 'en'"
+                (click)="changeLanguage('en'); toggleDropDown()"
+              >
+                <a class="block cursor-pointer px-4 py-2 hover:bg-gray-200"
+                  >EN</a
+                >
+              </li>
+              <li
+                [class.bg-gray-100]="translateService.currentLang == 'ar'"
+                (click)="changeLanguage('ar'); toggleDropDown()"
+              >
+                <a class="block cursor-pointer px-4 py-2 hover:bg-gray-200"
+                  >AR</a
+                >
+              </li>
+            </ul>
+          </div>
+          }
+        </div>
+      </div>
+
+      <button class="my-btn">
+        <i class="fa-solid fa-xmark transition-colors"></i>
+      </button>
+    </div>
+  </div>
+</header>

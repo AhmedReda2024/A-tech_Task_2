@@ -1,0 +1,28 @@
+<app-header></app-header>
+
+<div class="flex xs:flex-col md:flex-row gap-[10px] px-[10px]">
+  <div
+    class="w-[70%] xs:w-full md:w-[60%] lg:w-[70%] flex flex-col gap-2 lg:relative lg:h-[calc(100vh-100px)]"
+  >
+    <div
+      class="lg:absolute lg:top-0 lg:left-0 lg:w-full lg:h-full lg:overflow-auto lg:flex lg:flex-col lg:gap-2"
+    >
+      <div>
+        <app-phone-details></app-phone-details>
+      </div>
+      <div>
+        <app-phone-summary></app-phone-summary>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="w-[30%] xs:w-full md:w-[40%] lg:w-[30%] lg:relative lg:h-[calc(100vh-100px)]"
+  >
+    <div
+      class="lg:absolute lg:top-0 lg:left-0 lg:w-full lg:h-full lg:overflow-auto main lg:min-h-[400px]"
+    >
+      <app-sidebar-details></app-sidebar-details>
+    </div>
+  </div>
+</div>

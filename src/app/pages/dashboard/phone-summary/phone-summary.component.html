@@ -1,0 +1,149 @@
+<section
+  class="bg-white border border-[#ECF0F5] flex flex-col gap-[10px] pt-1 px-3 pb-3 xs:mb-3 rounded-md"
+>
+  <div>
+    <ul
+      class="flex items-center xs:flex-col xsm:flex-row gap-4 border-b border-[#ECF0F5]"
+    >
+      <li class="p-2 capitalize border-b border-[#3E97FF]">
+        <a
+          class="text-[13px] font-medium text-[#3E97FF] cursor-pointe xs:whitespace-nowrap xs-text-[10px]"
+        >
+          {{ "summary.call_summary" | translate }}
+        </a>
+      </li>
+      <li class="p-2 capitalize">
+        <a
+          class="text-[13px] font-normal cursor-pointer xs:whitespace-nowrap xs-text-[10px]"
+        >
+          {{ "summary.call_text" | translate }}
+        </a>
+      </li>
+      <li class="p-2 capitalize">
+        <a
+          class="text-[13px] font-normal cursor-pointer xs:whitespace-nowrap xs-text-[10px]"
+        >
+          {{ "summary.call_path" | translate }}
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="border border-[#ECF0F5] p-3 rounded-md">
+    <div
+      class="flex flex-col gap-[6px] border border-[#ECF0F5] rounded-md bg-white p-3"
+    >
+      <div>
+        <h5 class="pb-[6px]">{{ "summary.comments" | translate }}</h5>
+        <div class="p-2 bg-white border-[0.75px] border-[#D3D6DC] rounded-md">
+          <label for="comment" class="sr-only">Your comment</label>
+          <textarea
+            id="comment"
+            rows="4"
+            class="w-full px-0 text-sm text-gray-900 bg-white border-0 focus:ring-0"
+            placeholder="Write a comment..."
+            required
+            >{{ "summary.paragraph" | translate }} </textarea
+          >
+        </div>
+      </div>
+      <div>
+        <h5 class="pb-[6px]">{{ "summary.tags" | translate }}</h5>
+        <div
+          class="flex items-center xs:flex-wrap xsm:flex-row xsm:flex-wrap gap-1"
+        >
+          <button class="btn-deal xs:block xs:mb-1">
+            {{ "summary.deals" | translate }}
+          </button>
+          <button class="btn-deal xs:mb-1">
+            {{ "summary.deals" | translate }}
+          </button>
+          <button class="btn-customer xs:mb-1">
+            {{ "summary.customer_services" | translate }}
+          </button>
+          <button class="btn-deal xs:mb-1">
+            {{ "summary.deals" | translate }}
+          </button>
+          <button class="btn-customer xs:mb-1">
+            {{ "summary.customer_services" | translate }}
+          </button>
+          <button class="btn-deal xs:mb-1">
+            {{ "summary.deals" | translate }}
+          </button>
+          <button class="btn-customer xs:mb-1">
+            {{ "summary.customer_services" | translate }}
+          </button>
+          <button class="btn-deal xs:mb-1">
+            {{ "summary.deals" | translate }}
+          </button>
+          <button class="add-btn">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="flex flex-col gap-4 bg-[#FAFAFA] border border-[#ECF0F5] p-3 rounded-lg"
+  >
+    <div>
+      <h2
+        class="text-xs text-[#1C1C28] font-medium flex items-center gap-1 pb-[6px]"
+      >
+        <img src="/images/sparkling.png" alt="sparkling" />
+        {{ "summary.quick_summary" | translate }}
+      </h2>
+
+      <p class="pb-4 font-normal text-[13px] text-[#6B7280] leading-6">
+        {{ "summary.text_1" | translate }}
+      </p>
+
+      <p class="pb-4 font-normal text-[13px] text-[#6B7280] leading-6">
+        {{ "summary.text_2" | translate }}
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      <div class="grid sm:grid-cols-1 md:grid-cols-2">
+        <div class="xs:pb-2">
+          <h3 class="font-medium pb-[6px] text-xs text-[#1C1C28]">
+            {{ "summary.reason" | translate }}
+          </h3>
+          <p class="font-normal text-[#6B7280] text-[13px] leading-4">
+            {{ "summary.problem" | translate }}
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-medium pb-[6px] text-xs text-[#1C1C28]">
+            {{ "summary.employee_did" | translate }}
+          </h3>
+          <p class="font-normal text-[#6B7280] text-[13px] leading-4">
+            {{ "summary.problem_text" | translate }}
+          </p>
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-1 md:grid-cols-2">
+        <div class="xs:pb-2">
+          <h3 class="font-medium pb-[6px] text-xs text-[#1C1C28]">
+            {{ "summary.activities" | translate }}
+          </h3>
+          <p class="font-normal text-[#6B7280] text-[13px] leading-4">
+            {{ "summary.employee_instructions" | translate }}
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-medium pb-[6px] text-xs text-[#1C1C28]">
+            {{ "summary.logical_solution" | translate }}
+          </h3>
+          <p class="font-normal text-[#6B7280] text-[13px] leading-4">
+            {{ "summary.call_solution" | translate }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

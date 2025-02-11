@@ -1,0 +1,106 @@
+<section class="bg-white border border-[#ECF0F5] p-4 rounded-md">
+  <div class="flex xs:flex-col lg:flex-row gap-6">
+    <div class="w-[30%] xs:w-full lg:w-[30%]">
+      <div
+        class="flex flex-col items-center gap-2 bg-white phone-call-shadow rounded-lg py-[27px] px-4"
+      >
+        <div class="icon">
+          <img src="/images/phone-arrow-up.png" alt="phone-arrow-up" />
+        </div>
+        <h3 class="text-base font-medium text-[#1C1C28]">
+          {{ "details.outgoing_call" | translate }}
+        </h3>
+        <div class="text-[#6B7280] text-xs">
+          <div class="flex gap-1">
+            <p class="lg:whitespace-nowrap">
+              15 <span> {{ "details.month" | translate }} </span> 2024,
+            </p>
+            <p class="lg:whitespace-nowrap">
+              02:45 <span> {{ "details.hour" | translate }} </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-[70%] xs:w-full lg:w-[70%] py-9 xs:py-4">
+      <div class="grid xsm:grid-cols-2 lg:grid-cols-3">
+        <div class="xs:pb-2 xsm:pb-0">
+          <h3 class="text-[13px] font-normal text-[#6B7280]">
+            {{ "details.caller_id" | translate }}
+          </h3>
+          <span class="font-normal text-[#1C1C28] text-sm">
+            {{ "details.phone" | translate }}
+          </span>
+        </div>
+
+        <div class="xs:pb-2 xsm:pb-0">
+          <h3 class="text-[13px] text-[#6B7280]">
+            {{ "details.contacted_by" | translate }}
+          </h3>
+          <div
+            [class]="{
+              '': translateService.currentLang == 'en'
+            }"
+            class="flex items-center gap-[6px]"
+          >
+            <img
+              src="/images/img-1.png"
+              class="size-5 rounded-full"
+              alt="phone-details image"
+            />
+            <span
+              [class]="{
+                'lg:whitespace-nowrap': translateService.currentLang == 'en'
+              }"
+              class="text-sm"
+            >
+              {{ "details.contacted_by_name" | translate }}
+            </span>
+            <div class="small-icon">
+              <i class="fa-regular fa-user text-[10px] lg:text-[8px]"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="xs:pb-2 xsm:pb-0 w-full">
+          <h3 class="text-[13px] text-[#6B7280]">
+            {{ "details.call_duration" | translate }}
+          </h3>
+          <span>00:01:07</span>
+        </div>
+      </div>
+
+      <div class="grid xsm:grid-cols-2 lg:grid-cols-3 pt-8 xs:pt-2">
+        <div class="xs:pb-2 xsm:pb-0">
+          <h3 class="text-[13px] text-[#6B7280]">
+            {{ "details.department" | translate }}
+          </h3>
+          <span>{{ "details.customer_service" | translate }}</span>
+        </div>
+
+        <div class="xs:pb-2 xsm:pb-0">
+          <h3 class="text-[13px] text-[#6B7280]">
+            {{ "details.employee" | translate }}
+          </h3>
+
+          <div class="flex items-center gap-[6px]">
+            <img
+              src="/images/img-2.png"
+              class="size-5 rounded-full"
+              alt="phone-details image"
+            />
+            <span
+              [class]="{
+                'lg:whitespace-nowrap': translateService.currentLang == 'en'
+              }"
+              class="text-sm"
+            >
+              {{ "details.employee_name" | translate }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

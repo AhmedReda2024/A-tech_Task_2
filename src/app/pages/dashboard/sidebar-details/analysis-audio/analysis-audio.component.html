@@ -1,0 +1,73 @@
+<div
+  class="flex items-center xs:flex-col sm:flex-row md:flex-col lg:flex-row mb-2 gap-2"
+>
+  <div
+    class="block w-[50%] xs:w-full sm:w-[50%] md:w-full lg:w-[50%] bg-white border p-3 text-center border-[#ECF0F5] rounded-md"
+  >
+    <h5 class="text-xs font-normal text-[#1C1C28]">
+      {{ "analysis.sentiment_analysis" | translate }}
+    </h5>
+    <div class="py-3">
+      <i
+        class="fa-regular fa-face-smile font-semibold text-[18px] text-[#48B29A]"
+      ></i>
+      <p class="font-normal text-xs text-[#6B7280] pt-3">
+        {{ "analysis.positive" | translate }}
+      </p>
+    </div>
+  </div>
+
+  <div
+    class="block w-[50%] xs:w-full sm:w-[50%] md:w-full lg:w-[50%] bg-white border p-3 text-center border-[#ECF0F5] rounded-md"
+  >
+    <h5 class="text-xs font-normal text-[#1C1C28]">
+      {{ "analysis.After_call" | translate }}
+    </h5>
+    <div class="py-3">
+      <i
+        class="fa-solid fa-clipboard-list font-semibold text-[18px] text-[#48B29A]"
+      ></i>
+      <p
+        [class]="{
+          'lg:whitespace-nowrap': translateService.currentLang == 'en'
+        }"
+        class="font-normal text-xs text-[#6B7280] pt-3"
+      >
+        {{ "analysis.mission_scheduled" | translate }}
+      </p>
+    </div>
+  </div>
+</div>
+
+<div
+  class="flex items-center xs:flex-col sm:flex-row md:flex-col lg:flex-row gap-2"
+>
+  <div
+    class="block w-[50%] xs:w-full sm:w-[50%] md:w-full lg:w-[50%] bg-white border p-3 text-center border-[#ECF0F5] rounded-md"
+  >
+    <h5 class="text-xs font-normal text-[#1C1C28]">
+      {{ "analysis.ai_evaluation" | translate }}
+    </h5>
+    <div class="py-3">
+      <span class="text-[18px] font-semibold text-[#48B29A]">95%</span>
+      <p class="font-normal text-xs text-[#6B7280] pt-3">
+        {{ "analysis.great_call" | translate }}
+      </p>
+    </div>
+  </div>
+  <div
+    class="block w-[50%] xs:w-full sm:w-[50%] md:w-full lg:w-[50%] bg-white border p-3 text-center border-[#ECF0F5] rounded-md"
+  >
+    <h5 class="text-xs font-normal text-[#1C1C28]">
+      {{ "analysis.employee_evaluation" | translate }}
+    </h5>
+    <div class="py-3">
+      <i
+        class="fa-solid fa-face-grin-hearts font-semibold text-[18px] text-[#48B29A]"
+      ></i>
+      <p class="font-normal text-xs text-[#6B7280] pt-3">
+        {{ "analysis.great" | translate }}
+      </p>
+    </div>
+  </div>
+</div>
