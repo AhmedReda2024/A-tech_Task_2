@@ -1,21 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import url("./typography/typography.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "NeoSansArabic";
-  src: url("/fonts/alfont_com_NeoSansArabic.ttf") format("truetype"),
-    url("/fonts/alfont_com_NeoSansArabic.ttf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "NeoSansArabic";
-  src: url("/fonts/alfont_com_AlFont_com_Neo-Sans-W23-b.ttf") format("truetype"),
-    url("/fonts/alfont_com_AlFont_com_Neo-Sans-W23-b.ttf") format("opentype");
-  font-weight: bold;
-  font-style: normal;
+body {
+  font-family: NeoSansArabic;
 }
